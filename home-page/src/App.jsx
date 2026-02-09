@@ -1,10 +1,7 @@
 import React from "react";
 
-
 import { productCardData } from "./components/static/static-data";
-import { house, image, logo, search,  Tick, expert, world } from "./assets";
-
-
+import { house, image, logo, search, Tick, expert, world } from "./assets";
 
 function App() {
   return (
@@ -12,7 +9,7 @@ function App() {
       <div className="max-w-7xl mx-auto flex items-center p-4 bg-white text-black shadow-md">
         <div className="flex items-center space-x-2">
           <img
-            src= {logo}
+            src={logo}
             alt="Rentell logo"
             className="w-8 h-8 object-contain"
           />
@@ -110,8 +107,9 @@ function App() {
         </div>
       </div>
 
-
-       <p className="  font-bold justify-center flex mt-6 text-2xl ">Recently here</p>
+      <p className="  font-bold justify-center flex mt-6 text-2xl ">
+        Recently here
+      </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 max-w-7xl mx-auto">
         {productCardData.map((product, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md p-4">
@@ -124,74 +122,130 @@ function App() {
             <p>{product.pkr}</p>
             <p>{product.address}</p>
             <p>{product.street}</p>
-            
-             <div className="flex gap-4 justify-center mt-4">
-                <button className="px-5 py-2 font-medium bg-orange-500 border border-gray-300 rounded-md hover:bg-orange-300 ">
-                 Buy
-                </button>
-                <button className="px-5 py-2 font-medium border border-gray-300 rounded-md hover:bg-blue-500 ">
-                Read more
-                </button>
-              </div>
 
+            <div className="flex gap-4 justify-center mt-4">
+              <button className="px-5 py-2 font-medium bg-orange-500 border border-gray-300 rounded-md hover:bg-orange-300 ">
+                Buy
+              </button>
+              <button className="px-5 py-2 font-medium border border-gray-300 rounded-md hover:bg-blue-500 ">
+                Read more
+              </button>
+            </div>
           </div>
         ))}
       </div>
 
       <div className="grid grid-cols-2 gap-4 mt-6 max-w-7xl mx-auto">
         <div className="flex flex-col justify-center p-4">
-          <h2 className="font-bold text-2xl mb-3">Islamabad Top  Land</h2>
+          <h2 className="font-bold text-2xl mb-3">Islamabad Top Land</h2>
           <p className="mb-2">Exterior views of beautiful modern luxury home</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, dolorum ea? Aspernatur deserunt blanditiis molestiae id molestias mollitia eum ad fugit. Numquam magni odio dolorem sequi? Nam adipisci nemo id!
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            dolorum ea? Aspernatur deserunt blanditiis molestiae id molestias
+            mollitia eum ad fugit. Numquam magni odio dolorem sequi? Nam
+            adipisci nemo id!
           </p>
         </div>
         <div>
-          <img src= {house}  alt="house image" className="w-full h-64 object-cover rounded-lg mb-2" />
+          <img
+            src={house}
+            alt="house image"
+            className="w-full h-64 object-cover rounded-lg mb-2"
+          />
         </div>
       </div>
 
-       <div className="max-w-7xl mx-auto mt-4 items-center">
+      <div className="max-w-7xl mx-auto mt-4 items-center">
         <span className="font-bold text-xl ">Why choose us</span>
         <div className="flex gap-48 mt-8 ">
           <div className="flex flex-col justify-center items-center">
-         <img
-            src={Tick}
-            alt="blue tick"
-            className="w-auto h-16 object-contain mt-4"
-          />
-          <p className=" font-bold justify-center  mt-3">Verified Properties</p>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-          <img
-             src= {search}
-             alt="search-image"
-             className="w-auto h-16 object-contain mt-4"
-          />
-          <p className=" font-bold justify-center  mt-3">Lightning-Fast Search</p>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-          <img
-             src={expert}
-             alt="expert-support"
-             className="w-auto h-16 object-contain mt-4"
-          />
-          <p className=" font-bold justify-center  mt-3">Expert Support</p>
+            <img
+              src={Tick}
+              alt="blue tick"
+              className="w-auto h-16 object-contain mt-4"
+            />
+            <p className=" font-bold justify-center  mt-3">
+              Verified Properties
+            </p>
           </div>
           <div className="flex flex-col justify-center items-center">
             <img
-             src={world}
-             alt="world-icon"
-             className="w-auto h-16 object-contain mt-4"
-          />
-          <p className=" font-bold justify-center  mt-3">Largest in Pakistan</p>
+              src={search}
+              alt="search-image"
+              className="w-auto h-16 object-contain mt-4"
+            />
+            <p className=" font-bold justify-center  mt-3">
+              Lightning-Fast Search
+            </p>
           </div>
+          <div className="flex flex-col justify-center items-center">
+            <img
+              src={expert}
+              alt="expert-support"
+              className="w-auto h-16 object-contain mt-4"
+            />
+            <p className=" font-bold justify-center  mt-3">Expert Support</p>
           </div>
-       </div>
+          <div className="flex flex-col justify-center items-center">
+            <img
+              src={world}
+              alt="world-icon"
+              className="w-auto h-16 object-contain mt-4"
+            />
+            <p className=" font-bold justify-center  mt-3">
+              Largest in Pakistan
+            </p>
+          </div>
+        </div>
+      </div>
 
-
-
-
-
+      <footer className="bg-orange-500 text-white mt-12 py-8 max-w-7xl mx-auto ">
+       <div className="w-full bg-orange-500 mt-5">
+        <div className="px-6 md:px-16 pt-7 flex flex-col md:flex-row gap-10 md:gap-40">
+          <div className="flex flex-col gap-6">
+            <p className="text-2xl font-medium text-white">Quick Links</p>
+            <div className="flex flex-col gap-1">
+              <p className="text-lg text-white">Home</p>
+              <p className="text-lg text-white">Property listing</p>
+              <p className="text-lg text-white">Post property</p>
+              <p className="text-lg text-white">Blogs</p>
+              <p className="text-lg text-white">Contact us</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-6">
+            <p className="text-2xl font-medium text-white">Other Links</p>
+            <div className="flex flex-col gap-1">
+              <p className="text-lg text-white">Facebook</p>
+              <p className="text-lg text-white">WhatsApp</p>
+              <p className="text-lg text-white">Instagram</p>
+              <p className="text-lg text-white">YouTube</p>
+              <p className="text-lg text-white">Telegram</p>
+            </div>
+          </div>
+          <div className="flex flex-col relative sm:flex-row items-start sm:items-center gap-2  md:mt-20">
+            <input
+              type="text"
+              placeholder="Enter email"
+              className="border px-3 border-gray-300 text-black outline-none h-10 w-full sm:w-72 p-6 rounded-full"
+            />
+            <button className=" absolute right-1 h-10 px-5 bg-orange-500 hover:bg-orange-600 rounded-full">
+              <span className="font-semibold text-white">Subscribe</span>
+            </button>
+          </div>
+        </div>
+        <div className="px-6 md:px-28">
+          <hr className="border-t border-gray-300 mt-8 mb-3" />
+          <div className="flex flex-col md:flex-row gap-3 md:gap-24 text-center md:text-left">
+            <p className="text-white font-medium text-lg">
+              DHA, Phase 1, Islamabad Pakistan
+            </p>
+            <p className="text-white font-medium text-lg">
+              © All reserved copyright 2026
+            </p>
+          </div>
+        </div>
+      </div>
+      </footer>
     </div>
   );
 }
