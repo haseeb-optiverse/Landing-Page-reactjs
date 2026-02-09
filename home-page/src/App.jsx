@@ -8,7 +8,7 @@ function App() {
     <div className="min-h-screen bg-white p-4  ">
       <div className="max-w-7xl mx-auto flex items-center p-4 bg-white text-black shadow-md">
         <div className="flex items-center space-x-2">
-          <img
+           <img
             src={logo}
             alt="Rentell logo"
             className="w-8 h-8 object-contain"
