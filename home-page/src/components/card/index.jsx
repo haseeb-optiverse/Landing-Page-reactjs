@@ -11,7 +11,7 @@ import { ProductCard } from "../productCard/productCard";
 
   export const Card =() => {
     return(
-        <div>
+        <div  className="min-h-screen bg-white p-4  ">
 
          <div >
        <Header />

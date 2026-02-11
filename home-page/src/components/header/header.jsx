@@ -1,5 +1,5 @@
 import { logo } from "../../assets";
-
+import {Link} from "react-router-dom";
 export const Header =() => {
     return(
         <div className="max-w-7xl mx-auto flex items-center p-4 bg-white text-black shadow-md">
@@ -14,21 +14,28 @@ export const Header =() => {
         
                 <div className="flex w-full ml-16 font-bold items-center">
                   <ul className="flex space-x-6 mx-auto cursor-pointer">
-                    <li className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                    <Link to="/home" 
+                     className=" hover:bg-orange-500 transition p-2 rounded-md ">
+
                       Home
-                    </li>
-                    <li className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                    </Link>
+
+                    <Link to="/property" className=" hover:bg-orange-500 transition p-2 rounded-md ">
                       Property listing
-                    </li>
-                    <li className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                    </Link>
+
+                    <Link to="/post" 
+                     className=" hover:bg-orange-500 transition p-2 rounded-md ">
                       Post property
-                    </li>
-                    <li className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                    </Link>
+                    <Link to="" 
+                     className=" hover:bg-orange-500 transition p-2 rounded-md ">
                       Blog
-                    </li>
-                    <li className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                    </Link>
+                    <Link to="" 
+                     className=" hover:bg-orange-500 transition p-2 rounded-md ">
                       Contact us
-                    </li>
+                    </Link>
                   </ul>
         
                   <div className="flex space-x-4">
