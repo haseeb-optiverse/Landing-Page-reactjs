@@ -5,3 +5,4 @@ export { default as house } from "./house.jpg";
 export { default as search } from "./search-image.jpg";
 export { default as expert} from "./expert-support.jpg";
 export { default as world } from "./world-icon.png";
+export { default as image2 } from "./women-image.jpg";
