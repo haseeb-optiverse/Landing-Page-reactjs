@@ -15,34 +15,34 @@ export const Header =() => {
                 <div className="flex w-full ml-16 font-bold items-center">
                   <ul className="flex space-x-6 mx-auto cursor-pointer">
                     <Link to="/home" 
-                     className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                     className=" hover:bg-orange-500 hover:text-white transition p-2 rounded-md ">
 
                       Home
                     </Link>
 
-                    <Link to="/property" className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                    <Link to="/property" className=" hover:bg-orange-500  hover:text-white transition p-2 rounded-md ">
                       Property listing
                     </Link>
 
                     <Link to="/post" 
-                     className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                     className=" hover:bg-orange-500 transition  hover:text-white p-2 rounded-md ">
                       Post property
                     </Link>
                     <Link to="" 
-                     className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                     className=" hover:bg-orange-500 transition  hover:text-white p-2 rounded-md ">
                       Blog
                     </Link>
                     <Link to="" 
-                     className=" hover:bg-orange-500 transition p-2 rounded-md ">
+                     className=" hover:bg-orange-500 transition  hover:text-white p-2 rounded-md ">
                       Contact us
                     </Link>
                   </ul>
         
                   <div className="flex space-x-4">
-                    <button className="px-5 py-2 font-medium border border-gray-300 rounded-md hover:bg-orange-500 ">
+                    <button className="px-5 py-2 font-medium border border-gray-300 rounded-md  hover:text-white hover:bg-orange-500 ">
                       Login
                     </button>
-                    <button className="px-5 py-2 font-medium border border-gray-300 rounded-md hover:bg-orange-500 ">
+                    <button className="px-5 py-2 font-medium border border-gray-300 rounded-md  hover:text-white hover:bg-orange-500 ">
                       Sign up
                     </button>
                   </div>
