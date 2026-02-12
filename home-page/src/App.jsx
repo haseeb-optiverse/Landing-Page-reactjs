@@ -1,17 +1,14 @@
 import React from "react";
 import { Card } from "./components/card";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./components/home";
-import { PropertyListing } from "./components/propertyListing";
-import { PostProperty } from "./components/postProperty";
+import { HomePage } from "./components/home-components/home-page-1/home";
+
 
 function App() {
   return (
     <Routes>   
       <Route path="/" element={ <Card />}/>
-      <Route path="/home" element={<Home/>}/>
-      <Route path="/property" element={<PropertyListing/>} />
-      <Route path="/post" element ={<PostProperty/>} />
+      <Route path="/home" element={<HomePage/>}/>
     </Routes>
     
   );
