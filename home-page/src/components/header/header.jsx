@@ -39,12 +39,12 @@ export const Header =() => {
                   </ul>
         
                   <div className="flex space-x-4">
-                    <button className="px-5 py-2 font-medium border border-gray-300 rounded-md  hover:text-white hover:bg-orange-500 ">
+                    <Link to="/login"className="px-5 py-2 font-medium border border-gray-300 rounded-md  hover:text-white hover:bg-orange-500 ">
                       Login
-                    </button>
-                    <button className="px-5 py-2 font-medium border border-gray-300 rounded-md  hover:text-white hover:bg-orange-500 ">
+                    </Link>
+                    <Link to="/signUp" className="px-5 py-2 font-medium border border-gray-300 rounded-md  hover:text-white hover:bg-orange-500 ">
                       Sign up
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 </div>
