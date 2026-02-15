@@ -2,9 +2,11 @@ import { expert, search, Tick, world } from "../../assets";
 
 export const IconCard = () => {
     return(
-         <div className="max-w-7xl mx-auto mt-4 items-center">
-        <span className="font-bold text-xl ">Why choose us</span>
-        <div className="flex gap-48 mt-8 ">
+       <div className="max-w-7xl mx-auto mt-8 px-3">
+  <p className="font-bold text-xl text-center">Why choose us</p>
+
+  <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8 text-center">
+
           <div className="flex flex-col justify-center items-center">
             <img
               src={Tick}

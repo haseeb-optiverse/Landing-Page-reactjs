@@ -2,7 +2,7 @@ import { image } from "../../assets";
 
 export const HomeService = () => {
     return(
-         <div className="relative w-full max-w-7xl">
+         <div className="relative w-full max-w-7xl  mx-auto px-2 md:px-0">
                   <img
                     src={image}
                     alt="home image"

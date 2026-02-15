@@ -6,7 +6,8 @@ export const ProductCard = () => {
           <p className="  font-bold justify-center flex mt-6 text-2xl ">
                 Recently here
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 max-w-7xl mx-auto">
+             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-6 max-w-7xl mx-auto px-3">
+
                 {productCardData.map((product, index) => (
                   <div key={index} className="bg-white rounded-lg shadow-md p-4">
                     <img

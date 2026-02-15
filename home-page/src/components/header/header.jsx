@@ -2,7 +2,8 @@ import { logo } from "../../assets";
 import {Link} from "react-router-dom";
 export const Header =() => {
     return(
-        <div className="max-w-7xl mx-auto flex items-center p-4 bg-white text-black shadow-md">
+       <div className="w-full max-w-7xl mx-auto flex items-center p-2 md:p-4 text-sm md:text-base bg-white text-black shadow-md">
+
          <div className="flex items-center space-x-2">
                    <img
                     src={logo}

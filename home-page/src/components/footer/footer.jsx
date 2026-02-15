@@ -29,7 +29,7 @@ export const Footer =() => {
               placeholder="Enter email"
               className="border px-3 border-gray-300 text-black outline-none h-10 w-full sm:w-72 p-6 rounded-full"
             />
-            <button className=" absolute right-1 h-10 px-5 bg-orange-500 hover:bg-orange-600 rounded-full">
+            <button className=" absolute right-1 top-1/2 -translate-y-1/2 h-10 px-5 bg-orange-500 hover:bg-orange-600 rounded-full">
               <span className="font-semibold text-white">Subscribe</span>
             </button>
           </div>
