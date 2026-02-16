@@ -1,9 +1,38 @@
 import { logo } from "../../assets";
-import {Link} from "react-router-dom";
+import {href, Link} from "react-router-dom";
+const navlinks =[
+  {
+    text:"Home",
+    href:"home"
+  },
+   {
+    text:"Property-listing",
+    href:"property"
+  },
+   {
+    text:"Post-property",
+    href:"post"
+  },
+   {
+    text:"Blog",
+    href:"blog"
+  },
+   {
+    text:"Contact-us",
+    href:"contact"
+  },
+   {
+    text:"Login",
+    href:"login"
+  },
+   {
+    text:"SignUp",
+    href:"signUp"
+  },
+]
 export const Header =() => {
     return(
-       <div className="w-full max-w-7xl mx-auto flex items-center p-2 md:p-4 text-sm md:text-base bg-white text-black shadow-md">
-
+        <div className="max-w-7xl mx-auto flex items-center p-4 bg-white text-black shadow-md">
          <div className="flex items-center space-x-2">
                    <img
                     src={logo}
