@@ -1,32 +1,69 @@
-import {Link} from "react-router-dom";
-export const Footer =() => {
-    return(
-        <footer className="bg-orange-500 text-white mt-12 py-8 max-w-7xl mx-auto ">
-       <div className="w-full bg-orange-500 mt-5">
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+const footerlinks = [
+  {
+    text: "Home",
+    href: "home",
+  },
+  {
+    text: "Property-listing",
+    href: "property",
+  },
+  {
+    text: "Post-property",
+    href: "post",
+  },
+  {
+    text: "Blog",
+    href: "blog",
+  },
+  {
+    text: "Contact-us",
+    href: "contact",
+  },
+];
+export const Footer = () => {
+  const [active, setactive] = useState("");
+  return (
+    <footer className="bg-orange-500 text-white mt-12 py-8 max-w-7xl mx-auto ">
+      <div className="w-full bg-orange-500 mt-5">
         <div className="px-6 md:px-16 pt-7 flex flex-col md:flex-row gap-10 md:gap-40">
-         <div className=" flex flex-col justify-center gap-6 items-center md:justify-start md:flex-row md:gap-40">
-          <div className="flex flex-col gap-2">
-            <p className="text-2xl font-medium text-white">Quick Links</p>
-            <div className="flex flex-col items-center md:items-start gap-1">
-              <Link to="/home"
-              className="text-lg text-white hover:text-blue-400 ">Home</Link>
-              <Link to="/property" className="text-lg text-white hover:text-blue-400">Property listing</Link>
-              <Link to="post" className="text-lg text-white hover:text-blue-400">Post property</Link>
-              <Link to="blog" className="text-lg text-white hover:text-blue-400">Blogs</Link>
-              <Link to="contact" className="text-lg text-white hover:text-blue-400">Contact us</Link>
+          <div className=" flex flex-col justify-center gap-6 items-center md:justify-start md:flex-row md:gap-40">
+            <div className="flex flex-col gap-2">
+              <p className="text-2xl font-medium text-white">Quick Links</p>
+              <div className="flex flex-col items-center md:items-start gap-1">
+                {footerlinks.map((link, index) => {
+                  return (
+                    <Link
+                     key={index}
+                      to={`/${link.href}`}
+                      onClick={() => setactive(link.href)}
+                      className={`text-lg
+                        ${
+                          active === link.href
+                          ?"font-semibold "
+                          :"hover:text-blue-600"
+                        }
+                        `}
+                    >
+                    {link.text}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="text-2xl font-medium text-white">Other Links</p>
+              <div className="flex flex-col items-center md:items-start gap-1">
+                <p className="text-lg text-white">Facebook</p>
+                <p className="text-lg text-white">WhatsApp</p>
+                <p className="text-lg text-white">Instagram</p>
+                <p className="text-lg text-white">YouTube</p>
+                <p className="text-lg text-white">Telegram</p>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-2xl font-medium text-white">Other Links</p>
-            <div className="flex flex-col items-center md:items-start gap-1">
-              <p className="text-lg text-white">Facebook</p>
-              <p className="text-lg text-white">WhatsApp</p>
-              <p className="text-lg text-white">Instagram</p>
-              <p className="text-lg text-white">YouTube</p>
-              <p className="text-lg text-white">Telegram</p>
-            </div>
-          </div>
-</div>
           <div className="flex flex-col relative sm:flex-row items-start sm:items-center gap-2  md:mt-20">
             <input
               type="text"
@@ -50,6 +87,6 @@ export const Footer =() => {
           </div>
         </div>
       </div>
-      </footer>
-    )
-}
+    </footer>
+  );
+};

@@ -8,7 +8,7 @@ import {  Pricing } from "./priceHeading";
 
 export const HomePage = () => {
   return (
-    <div className="bg-slate-600 w-full">
+    <div className="bg-slate-600 max-w-7xl mx-auto w-full">
     
     <Pricing />
 
