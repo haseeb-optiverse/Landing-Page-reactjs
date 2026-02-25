@@ -6,6 +6,9 @@ import { PropertyListing } from "./components/home-components/property-listing/p
 import { Login } from "./components/home-components/login-page/loginPage";
 import { SignUp } from "./components/home-components/login-page/signUp";
 import { Header } from "./components/header/header";
+import ContactUs from "./components/home-components/contact-us/contactUs";
+import Blog from "./components/home-components/blog-com/blog";
+
 
 
 
@@ -20,6 +23,8 @@ function App() {
       <Route path="/property" element={<PropertyListing/>}/>
       <Route path="/login" element={<Login />} />
       <Route path="/signUp" element={<SignUp />} />
+       <Route path="/contact-us" element={<ContactUs/>} />
+       <Route path="/blog" element={<Blog/>} />
     </Routes>
     </>
     

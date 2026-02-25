@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 export const SignUp = () => {
     return (
         <div className="max-w-xl mx-auto mt-10 p-6 bg-white rounded-md shadow-md">

@@ -20,7 +20,7 @@ const navlinks = [
   },
   {
     text: "Contact-us",
-    href: "contact",
+    href: "contact-us",
   },
 ];
 export const Header = () => {
