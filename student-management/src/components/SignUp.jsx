@@ -8,17 +8,15 @@ const navigate = useNavigate()
 
 const signUpHandel = () =>{
 
- 
-
-
-if (username == "" || password == "") {
-  alert("Please enter password")
+ if (username == "" || password == "") {
+  alert("Please enter username and password")
 }else{
    localStorage.setItem("username", username)
   localStorage.setItem("password", password)
-  alert("sign Up ")
+  alert("sign Up succesfully  ")
   navigate("/login")
 }
+
 
 }
 
