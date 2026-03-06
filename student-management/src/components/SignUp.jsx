@@ -27,7 +27,7 @@ const signUpHandel = () =>{
 
             <div className="flex flex-col gap-4 mt-6 p-3">
             <div className="flex flex-col">
-            <label className="font-medium">Username</label>
+            <label className="font-medium">Username and Email</label>
             <input  
             className="border border-gray-500 p-2 w-[96%] rounded-md outline-none"
             value={username}
