@@ -8,26 +8,33 @@ const navigate = useNavigate()
 
 const signUpHandel = () =>{
 
- if (username == "" || password == "") {
-  alert("Please enter username and password")
-}else{
-   localStorage.setItem("username", username)
-  localStorage.setItem("password", password)
-  alert("sign Up succesfully  ")
-  navigate("/login")
-}
+ if (username === "" && password === "") {
+    alert("Please enter username and password");
+  } 
+  else if (username === "") {
+    alert("Please enter username");
+  } 
+  else if (password === "") {
+    alert("Please enter password");
+  } 
+  else {
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
+    alert("Sign Up Successfully");
+    navigate("/login");
+  }
 
 
 }
 
 
     return(
-         <div className="max-w-xl mx-auto mt-10 p-6 bg-white rounded-md shadow-md">
+         <div className="max-w-xl mx-auto mt-10 p-6 bg-white rounded-md shadow-md hover:shadow-2xl">
             <h1 className="font-bold text-3xl text-center">Sign Up</h1>
 
             <div className="flex flex-col gap-4 mt-6 p-3">
             <div className="flex flex-col">
-            <label className="font-medium">Username and Email</label>
+            <label className="font-medium">Username</label>
             <input  
             className="border border-gray-500 p-2 w-[96%] rounded-md outline-none"
             value={username}
@@ -59,7 +66,7 @@ const signUpHandel = () =>{
               
             </p>
              <Link to="/login"
-            className="font-medium text-sm"
+            className="font-medium text-sm text-blue-600"
             > Login</Link>
 
             </div>

@@ -22,7 +22,7 @@ export const Login = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-10 p-6 bg-white rounded-md shadow-md">
+    <div className="max-w-xl mx-auto mt-10 p-6 bg-white rounded-md shadow-md  hover:shadow-2xl">
       <h1 className="font-bold text-3xl text-center">Login</h1>
 
       <div className="flex flex-col gap-4 mt-6 p-3">
@@ -57,7 +57,7 @@ export const Login = () => {
       </div>
       <div className="flex justify-center gap-1">
         <p className="font-medium text-sm">Don't have any account?</p>
-        <Link to="/" className="font-medium text-sm">
+        <Link to="/" className="font-medium text-sm text-blue-600">
           
           Sign Up
         </Link>

@@ -20,7 +20,13 @@ export const Dashboard = () => {
     }
   }, []);
 
- 
+ useEffect(() => {
+  const user = localStorage.getItem("username");
+  if (!user) {
+    navigate("/login");
+  }
+}, []);
+
   const handleEdit = (rollNumber) => {
     const studentToEdit = studentsData.find(
       (student) => student.rollNumber === rollNumber,
