@@ -134,24 +134,61 @@ const Blog = () => {
 // one()
 
 // IIFE
-(function one() {
-  console.log(`DB Connected`)
-})();
+// (function one() {
+//   console.log(`DB Connected`)
+// })();
 
-// arrow function
-(() =>{
-  console.log(`DB Connected Two`)
-}
+// // arrow function
+// (() =>{
+//   console.log(`DB Connected Two`)
+// }
 
-)();
+// )();
 
-((name) =>{
-  console.log(`DB Connected Two ${name}`)
-}
+// ((name) =>{
+//   console.log(`DB Connected Two ${name}`)
+// }
 
-)("Haseeb")
+// )("Haseeb")
 
 
+//******************************* filter map and reduce ****************************************
+
+// let myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+//let newNums = myNums.filter((nums) => nums > 4 )
+
+// these boths  return same output
+
+// let newNums = myNums.filter((nums) => {
+//   return nums > 4
+// } )
+
+// let newNums =[]
+
+// myNums.forEach((nums) => {
+//   if (nums > 4) {
+//     newNums.push(nums)
+//   }
+// })
+// console.log(newNums)
+
+//  let myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+//  let newNums = myNums
+//               .map((num) => num * 10 )
+//               .map((num) => {
+//                 return num + 1
+//               })
+//               .filter((num) => num >= 40 )
+// console.log(newNums)
+
+let myNums = [ 1, 2, 3]
+
+let newNums =myNums.reduce((acc , curr) => {
+  return acc + curr
+}, 0 )
+console.log(newNums)
 
   return(
     <h1>hello world</h1>
