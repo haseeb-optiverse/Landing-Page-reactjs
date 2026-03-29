@@ -1,7 +1,9 @@
 import React from "react";
 import product from "./product";
+import { useNavigate } from "react-router-dom";
 
-const Home = () => {
+const Home = ({ addToCart }) => {
+   const navigate = useNavigate();
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-6">Product Store</h1>
@@ -10,7 +12,7 @@ const Home = () => {
         {product.map((item) => (
           <div
             key={item.id}
-            className="border rounded-2xl shadow-md p-4 text-center hover:shadow-xl transition"
+            className=" rounded-2xl shadow-lg p-4 text-center hover:shadow-xl "
           >
             <img
               src={item.image}
@@ -20,12 +22,19 @@ const Home = () => {
             <h3 className="text-lg font-semibold">{item.name}</h3>
             <p className="text-gray-600 mb-3">${item.price}</p>
 
-            <button
-              
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-            >
-              Add to Cart
-            </button>
+           <button
+            onClick={() => addToCart(item)}
+            className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+          >
+            Add to Cart
+          </button>
+
+          <button
+            onClick={() => navigate("/cart")}
+            className="ml-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
+          >
+            Go to Cart
+          </button>
           </div>
         ))}
       </div>
